@@ -1,5 +1,5 @@
 import db from './db/connection.js'
-import productsRoutes from './routes/products.js'
+import postRoutes from './routes/posts.js'
 
 import express from 'express'
 import cors from 'cors'
@@ -12,7 +12,7 @@ app.use(express.json())
 app.use(cors())
 app.use(logger('dev'))
 
-app.use('/api', productsRoutes)
+app.use('/api', postRoutes)
 
 db.on('connected', () => {
   console.log('Connected to MongoDB!')
