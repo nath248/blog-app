@@ -2,7 +2,7 @@ import './App.css';
 import Home from "./screens/Home/Home"
 import Posts from "./screens/Posts/Posts"
 import CreatePost from './screens/CreatePost/CreatePost'
-// import EditPost from "./screens/EditPost"
+import EditPost from "./screens/EditPost/EditPost"
 import { Route, Routes } from 'react-router-dom'
 import { useState } from "react";
 
@@ -15,7 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/posts" element={<Posts toggle={toggle} />} />
         <Route path="/add" element={<CreatePost setToggle={setToggle}/>} />
-        <Route path="/posts/:id/edit" element={<h2>Edit</h2>} />
+        <Route path="/posts/:id/edit" element={<EditPost />} />
       </Routes>
     </div>
   );
