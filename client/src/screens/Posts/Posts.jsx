@@ -3,7 +3,7 @@ import Post from "../../components/Post/Post"
 import Layout from "../../components/Layout/Layout"
 import { getPosts } from "../../services/posts"
 
-function Posts() {
+function Posts(props) {
 
   const [posts, setPosts] = useState([]);
 
@@ -13,7 +13,7 @@ function Posts() {
       setPosts(allPosts)
     }
     grabPosts()
-  }, [])
+  }, [props.toggle])
 
   return (
     <div>
