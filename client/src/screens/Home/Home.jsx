@@ -1,12 +1,12 @@
 import "./Home.css"
-import Post from "../../components/Post/Post"
+import Posts from "../Posts/Posts";
 import Layout from "../../components/Layout/Layout"
 
 const Home = () => {
   return (
     <Layout>
       <div>
-        <Post />
+        <Posts />
       </div>
     </Layout>
   )
