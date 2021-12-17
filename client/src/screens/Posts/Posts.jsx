@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react"
-
 import Post from "../../components/Post/Post"
-// import Layout from "../../components/Layout/Layout"
+import Layout from "../../components/Layout/Layout"
 import { getPosts } from "../../services/posts"
 
 function Posts() {
@@ -18,10 +17,20 @@ function Posts() {
 
   return (
     <div>
-      {/* <Layout>
-        
-      </Layout> */}
-      <h1>hello</h1>
+      <Layout>
+        {posts.map((post, index) => {
+          return (
+            <Post id={post._id}
+              name={post.name}
+              profilePic={post.profilePic}
+              status={post.status}
+              comment={post.comment}
+              key={index}
+            />
+          )
+        })
+        }
+      </Layout>
     </div>
   )
 }
