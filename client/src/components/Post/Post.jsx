@@ -1,4 +1,5 @@
 import "./Post.css"
+import { Link } from "react-router-dom";
 
 function Post(props) {
   return (
@@ -10,6 +11,7 @@ function Post(props) {
       <div className="post-description">
         <p>{props.status}</p>
         <p>{props.comment}</p>
+        <Link to="/posts/:id/edit" className="edit-button">Edit</Link>
       </div>
     </div>
   )
