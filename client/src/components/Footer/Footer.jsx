@@ -1,9 +1,12 @@
+import React from 'react'
+import './Footer.css'
+
 function Footer() {
   return (
-    <div>
-      
-    </div>
+    <footer>
+      © Hayden, Nathaly, Lisa, Rodney
+    </footer>
   )
 }
 
-export default Footer;
+export default Footer
