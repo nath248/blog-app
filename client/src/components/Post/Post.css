@@ -1,0 +1,25 @@
+.post-box-info {
+  width: 420px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: black 1px solid;
+  margin: 5px;
+  padding: 5px;
+  box-shadow: 2px 5px 5px #023e8a;
+  background-color: #caf0f8;
+  color: #023e8a;
+}
+
+.post-box-info img {
+  width: 120px;
+  height: 130px;
+  border-radius: 50%;
+}
+
+.post-name {
+  padding: 5px;
+}
+.post-description {
+  padding: 5px;
+}
