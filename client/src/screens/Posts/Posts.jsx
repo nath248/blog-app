@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import Post from "../../components/Post/Post"
 import Layout from "../../components/Layout/Layout"
 import { getPosts } from "../../services/posts"
+import "./Posts.css"
 
 function Posts(props) {
 
@@ -17,7 +18,7 @@ function Posts(props) {
 
   return (
     <div>
-      <Layout>
+        <div className="posts-section">
         {posts.map((post, index) => {
           return (
             <Post id={post._id}
@@ -30,7 +31,7 @@ function Posts(props) {
           )
         })
         }
-      </Layout>
+        </div>
     </div>
   )
 }

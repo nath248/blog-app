@@ -1,0 +1,62 @@
+.form-page-background {
+  background: lightgray;
+  height: 100vh;
+}
+
+.form-div {
+  background-color: white;
+  transform: translate(0%, 65%);
+  border: 1px solid #023E8A;
+  width: 300px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+
+input {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+input::placeholder {
+  font-family: 'raleway';
+}
+
+input:hover {
+  background-color: rgb(2, 62, 138, 0.1);
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+textarea {
+  resize: none;
+}
+
+.sub-button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+  background: #48CAE4;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.sub-button:hover {
+  background: #03045E;
+}
+
+.form-name {
+  color: #023E8A;
+}
+
+.form-title {
+  margin-bottom: -100px;
+  font-size: 50px;  
+  color: #023E8A;
+  margin-top: 0px;
+  padding-top: 50px;
+}
