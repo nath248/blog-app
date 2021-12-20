@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react"
-
 import Post from "../../components/Post/Post"
-// import Layout from "../../components/Layout/Layout"
+import Layout from "../../components/Layout/Layout"
 import { getPosts } from "../../services/posts"
+import "./Posts.css"
 
-function Posts() {
+function Posts(props) {
 
   const [posts, setPosts] = useState([]);
 
@@ -14,21 +14,24 @@ function Posts() {
       setPosts(allPosts)
     }
     grabPosts()
-  }, [])
+  }, [props.toggle])
 
   return (
     <div>
-      {
-        posts.map(post => (
-          <div>
-            <img src={post.profilePic} alt="" />
-            <h1>{post.name}</h1>
-            <h2>{post.status}</h2>
-            <p>{post.comment}</p>
-          </div>
-
-        ))
-      }
+        <div className="posts-section">
+        {posts.map((post, index) => {
+          return (
+            <Post id={post._id}
+              name={post.name}
+              profilePic={post.profilePic}
+              status={post.status}
+              comment={post.comment}
+              key={index}
+            />
+          )
+        })
+        }
+        </div>
     </div>
   )
 }

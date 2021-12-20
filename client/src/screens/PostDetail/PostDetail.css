@@ -1,5 +1,11 @@
-.post-box-info {
-  width: 420px;
+.main-detail {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.detail {
+  width: 520px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -11,23 +17,29 @@
   color: #023e8a;
 }
 
-.post-box-info img {
+.detail img {
   width: 120px;
   height: 130px;
   border-radius: 50%;
 }
 
-.post-name {
+.name {
   padding: 5px;
 }
-.post-description {
+.description {
   padding: 5px;
 }
 
-.edit-button {
+button {
   text-decoration: none;
   background-color: #83ddef;
   border: 1px solid #023e8a;
   border-radius: 2px;
   padding: 2px;
+}
+
+.edit-button {
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
 }
