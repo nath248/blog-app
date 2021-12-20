@@ -18,10 +18,17 @@ function Posts() {
 
   return (
     <div>
-      {/* <Layout>
-        
-      </Layout> */}
-      <h1>hello</h1>
+      {
+        posts.map(post => (
+          <div>
+            <img src={post.profilePic} alt="" />
+            <h1>{post.name}</h1>
+            <h2>{post.status}</h2>
+            <p>{post.comment}</p>
+          </div>
+
+        ))
+      }
     </div>
   )
 }
