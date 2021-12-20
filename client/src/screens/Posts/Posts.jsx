@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react"
 import Post from "../../components/Post/Post"
-import Layout from "../../components/Layout/Layout"
 import { getPosts } from "../../services/posts"
 import "./Posts.css"
 
