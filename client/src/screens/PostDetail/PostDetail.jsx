@@ -30,17 +30,21 @@ function PostDetail() {
   }
 
   return (
-    <Layout>                
+    <Layout> 
+      <div className='main-detail'>
       <div className="detail">
+        <div className='name'>
           <img className="profile-pic" src={post.profilePic} alt={post.name} />
           <div className="name">{post.name}</div>
-          <div className="status">{post.status}</div>
+        </div>
+        <div className='description'>
+        <div className="status">{post.status}</div>
           <div className="comment">{post.comment}</div>
-          <div className="button-container">
-              <button className="edit-button"><Link className="edit-link" to={`/posts/${post._id}/edit`}>Edit</Link></button>
-              <button className="delete-button" onClick={handleClick}>Delete</button>
-          </div>
-      </div>
+            <Link className="edit-button" to={`/posts/${post._id}/edit`}><button>Edit</button></Link>
+            <button className="delete-button" onClick={handleClick}>Delete</button>
+        </div>
+        </div>
+        </div>
     </Layout>
   )
 }

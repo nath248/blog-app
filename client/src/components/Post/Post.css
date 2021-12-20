@@ -23,3 +23,11 @@
 .post-description {
   padding: 5px;
 }
+
+.edit-button {
+  text-decoration: none;
+  background-color: #83ddef;
+  border: 1px solid #023e8a;
+  border-radius: 2px;
+  padding: 2px;
+}

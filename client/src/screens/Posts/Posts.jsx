@@ -18,7 +18,6 @@ function Posts(props) {
 
   return (
     <div>
-      <Layout>
         <div className="posts-section">
         {posts.map((post, index) => {
           return (
@@ -33,7 +32,6 @@ function Posts(props) {
         })
         }
         </div>
-      </Layout>
     </div>
   )
 }
